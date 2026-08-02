@@ -1,0 +1,108 @@
+export const en = {
+  nav: {
+    home: "Home",
+    products: "Products",
+    about: "About",
+    faq: "FAQ",
+    contact: "Contact"
+  },
+  hero: {
+    greeting_default: "Welcome",
+    tagline: "Where Nature Meets Purity",
+    subtitle: "Premium natural wellness products crafted for your everyday health journey",
+    cta_shop: "Shop Now",
+    cta_story: "Our Story"
+  },
+  why: {
+    title: "Why Choose Kalp Roots?",
+    c1_title: "100% Natural",
+    c1_desc: "No artificial additives, straight from nature",
+    c2_title: "Chemical Free",
+    c2_desc: "Pure, without harmful chemicals or preservatives",
+    c3_title: "Rich in Nutrients",
+    c3_desc: "Packed with vitamins, minerals, and antioxidants",
+    c4_title: "Supports Immunity",
+    c4_desc: "Helps strengthen your body's natural defenses",
+    c5_title: "Lab Tested",
+    c5_desc: "Quality you can trust, verified for purity",
+    c6_title: "Premium Quality",
+    c6_desc: "Carefully sourced and hygienically packed"
+  },
+  benefits: {
+    title: "Health Benefits of Moringa",
+    b1_title: "Boosts Energy",
+    b1_desc: "Natural energy without caffeine crashes",
+    b2_title: "Supports Digestion",
+    b2_desc: "Promotes healthy gut function",
+    b3_title: "Improves Immunity",
+    b3_desc: "Rich in immune-boosting nutrients",
+    b4_title: "Rich in Protein",
+    b4_desc: "Plant-based protein for strength",
+    b5_title: "High in Calcium",
+    b5_desc: "Supports strong bones and teeth",
+    b6_title: "Rich in Iron",
+    b6_desc: "Helps maintain healthy blood levels",
+    b7_title: "Rich in Antioxidants",
+    b7_desc: "Fights free radicals and oxidative stress",
+    b8_title: "Supports Healthy Skin",
+    b8_desc: "Nutrients for a natural glow",
+    b9_title: "Helps Weight Management",
+    b9_desc: "Supports a balanced metabolism",
+    b10_title: "Daily Wellness",
+    b10_desc: "A wholesome addition to your daily routine"
+  },
+  products: {
+    title: "Our Products",
+    moringa_name: "Premium Moringa Powder",
+    dhoop_name: "Natural Vedic Dhoop",
+    amla_name: "Amla Powder",
+    coming_soon: "Coming Soon",
+    buy_now: "Buy Now"
+  },
+  about: {
+    title: "Our Story",
+    story_text: "Kalp Roots was founded with a simple vision — to make natural wellness products easily accessible without compromising on quality or purity. In a world full of artificial supplements, we wanted to return to the roots. Our journey started by seeking out the finest natural ingredients, meticulously ensuring they remain in their most potent, unadulterated form.",
+    vision_title: "Our Vision",
+    mission_title: "Our Mission"
+  },
+  contact: {
+    title: "Contact Us",
+    email: "kalprootsnaturals@gmail.com",
+    phone: "+91 88266 71629",
+    whatsapp: "Chat on WhatsApp",
+    name_label: "Name",
+    email_label: "Email",
+    message_label: "Message",
+    send: "Send Message",
+    success: "Message sent successfully!"
+  },
+  faq: {
+    title: "Frequently Asked Questions",
+    q1: "What is Kalp Roots?",
+    a1: "Kalp Roots is a natural wellness brand dedicated to providing high-quality, sustainably sourced products that support your health and well-being.",
+    q2: "Are your products 100% natural?",
+    a2: "Yes, We focus on sourcing quality natural ingredients and avoid unnecessary artificial additives wherever applicable. Please check the product label for specific details.",
+    q3: "How do you ensure product quality?",
+    a3: "Every product is carefully selected, processed under hygienic conditions, and packed with strict quality standards to preserve its freshness and purity.",
+    q4: "Do your products contain preservatives or artificial colours?",
+    a4: "Our products are made with a focus on natural ingredients. Product-specific information is always mentioned on the packaging.",
+    q5: "How should I store the products?",
+    a5: "Store the products in a cool, dry place away from direct sunlight. Always keep the pack tightly sealed after use.",
+    q6: "Can I use your products daily?",
+    a6: "Most of our products are suitable for regular use when used as directed. Please follow the usage instructions mentioned on the product label.",
+    q7: "Where can I buy Kalp Roots products?",
+    a7: "You can purchase our products through our official website and our authorised online marketplaces.",
+    q8: "Do you deliver across India?",
+    a8: "Yes, we aim to deliver our products across India through trusted delivery partners.",
+    q9: " How can I contact Kalp Roots?",
+    a9: "You can reach us through the Contact Us page, email, or phone number mentioned on our website. We’ll be happy to assist you.",
+    q10: "Will Kalp Roots introduce more natural products?",
+    a10: "Yes, We are continuously working to expand our range with more premium natural wellness products."
+  },
+  footer: {
+    tagline: "From Nature to Wellness",
+    copyright: "© 2026 Kalp Roots. All rights reserved.",
+    privacy: "Privacy Policy",
+    terms: "Terms & Conditions"
+  }
+};
