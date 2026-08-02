@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from '@/i18n';
 import { Button } from '@/components/ui/button';
 import { SectionWrapper } from '@/components/SectionWrapper';
-import { 
+import {
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -22,12 +22,13 @@ export default function MoringaDetail() {
   return (
     <div className="flex flex-col min-h-screen pt-28 pb-20">
       <div className="container mx-auto px-4 md:px-6">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mb-20">
           {/* Product Visual */}
           <SectionWrapper>
             <div className="bg-gradient-to-br from-primary/10 to-secondary/40 rounded-3xl p-8 aspect-square flex items-center justify-center relative overflow-hidden border border-border/50 shadow-sm">
               <div className="w-full h-full bg-white/40 blur-3xl absolute rounded-full"></div>
+
               <div className="relative z-10 flex flex-col items-center justify-center text-center space-y-6 p-8 bg-background/40 backdrop-blur-sm rounded-full border border-white/20 aspect-square w-3/4 max-w-sm shadow-xl">
                 <Leaf className="w-24 h-24 text-primary drop-shadow-md" />
                 <div>
@@ -154,7 +155,7 @@ export default function MoringaDetail() {
                     </li>
                   </ul>
                 </div>
-                
+
                 <div>
                   <h4 className="font-bold text-lg mb-3">Storage Instructions</h4>
                   <p className="text-muted-foreground">

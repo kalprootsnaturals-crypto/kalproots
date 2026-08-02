@@ -61,48 +61,48 @@ export default function Faq() {
 
 
               <AccordionItem value="item-3" className="border border-border/50 px-4 rounded-lg bg-background data-[state=open]:border-primary/30 transition-colors">
-                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q3')}</AccordionTrigger>
+                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q5')}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-base leading-relaxed pt-2">
-                  {t('faq.a3')}
+                  {t('faq.a5')}
                 </AccordionContent>
               </AccordionItem>
 
 
               <AccordionItem value="item-3" className="border border-border/50 px-4 rounded-lg bg-background data-[state=open]:border-primary/30 transition-colors">
-                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q3')}</AccordionTrigger>
+                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q6')}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-base leading-relaxed pt-2">
-                  {t('faq.a3')}
+                  {t('faq.a6')}
                 </AccordionContent>
               </AccordionItem>
 
 
               <AccordionItem value="item-3" className="border border-border/50 px-4 rounded-lg bg-background data-[state=open]:border-primary/30 transition-colors">
-                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q3')}</AccordionTrigger>
+                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q7')}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-base leading-relaxed pt-2">
-                  {t('faq.a3')}
+                  {t('faq.a7')}
                 </AccordionContent>
               </AccordionItem>
 
 
               <AccordionItem value="item-3" className="border border-border/50 px-4 rounded-lg bg-background data-[state=open]:border-primary/30 transition-colors">
-                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q3')}</AccordionTrigger>
+                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q8')}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-base leading-relaxed pt-2">
-                  {t('faq.a3')}
+                  {t('faq.a8')}
                 </AccordionContent>
               </AccordionItem>
 
 
               <AccordionItem value="item-3" className="border border-border/50 px-4 rounded-lg bg-background data-[state=open]:border-primary/30 transition-colors">
-                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q3')}</AccordionTrigger>
+                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q9')}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-base leading-relaxed pt-2">
-                  {t('faq.a3')}
+                  {t('faq.a9')}
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border border-border/50 px-4 rounded-lg bg-background data-[state=open]:border-primary/30 transition-colors">
-                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q3')}</AccordionTrigger>
+                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">{t('faq.q10')}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-base leading-relaxed pt-2">
-                  {t('faq.a3')}
+                  {t('faq.a10')}
                 </AccordionContent>
               </AccordionItem>
 
