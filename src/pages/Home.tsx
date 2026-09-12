@@ -19,7 +19,7 @@ export default function Home() {
       {/* HERO SECTION */}
 
       {/* LANDSCAPE IMAGE STORY SECTION */}
-      <section className="bg-background py-8 sm:py-12 md:py-8">
+      <section className="bg-background pb-8">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionWrapper>
             <div
