@@ -17,6 +17,46 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen pt-20">
       {/* HERO SECTION */}
+
+      {/* LANDSCAPE IMAGE STORY SECTION */}
+      <section className="bg-background py-8 sm:py-12 md:py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionWrapper>
+            <div
+              className="
+          group
+          relative
+          w-full
+          overflow-hidden
+          rounded-2xl
+          sm:rounded-3xl
+          aspect-[16/9]
+          md:aspect-[21/9]
+          shadow-lg
+        "
+            >
+              {/* Landscape Image */}
+              <img
+                src="/kalp-root-landscape.jpeg"
+                alt="Fresh moringa leaves in nature"
+                className="
+            absolute
+            inset-0
+            w-full
+            h-full
+            object-cover
+            object-center
+            transition-transform
+            duration-1000
+            ease-out
+            group-hover:scale-105
+          "
+              />
+            </div>
+          </SectionWrapper>
+        </div>
+      </section>
+
       <section className="relative overflow-hidden bg-gradient-to-b from-primary/10 to-background pt-8 pb-20 md:pt-12 md:pb-32">
         {/* <GreetingBanner /> */}
 
@@ -224,7 +264,7 @@ export default function Home() {
       </section>
 
       {/* ABOUT TEASER */}
-      <section className="py-20 bg-background">
+      <section className="pt-20 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <SectionWrapper>
             <div className="bg-secondary/30 rounded-3xl p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center">
@@ -261,6 +301,19 @@ export default function Home() {
           </SectionWrapper>
         </div>
       </section>
+
+      <section className="py-6 md:py-20 bg-background">
+        <SectionWrapper className="container mx-auto px-4 md:px-6">
+          <div className="overflow-hidden rounded-3xl shadow-lg">
+            <img
+              src="/kalp-roots-footer.jpeg"
+              alt="Kalp Roots — Rooted in Nature, Committed to Wellness"
+              className="w-full h-auto block"
+            />
+          </div>
+        </SectionWrapper>
+      </section>
+
     </div>
   );
 }

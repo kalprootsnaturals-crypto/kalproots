@@ -50,30 +50,10 @@ export default function HealthyLifeSection() {
                                 className="relative overflow-hidden rounded-3xl shadow-2xl"
                             >
                                 <img
-                                    src="/healthy.png"
+                                    src="/moringa.jpeg"
                                     alt="Healthy Lifestyle"
                                     className="h-[700px] w-full object-cover"
                                 />
-
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-
-                                <div className="absolute bottom-12 left-12 right-12">
-
-                                    <div className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-white font-medium mb-6">
-                                        <Leaf className="w-4 h-4" />
-                                        Healthy Living
-                                    </div>
-
-                                    <h2 className="text-5xl font-bold text-white leading-tight">
-                                        Nature's
-                                        <br />
-                                        Finest
-                                        <span className="block text-primary">
-                                            Superfood
-                                        </span>
-                                    </h2>
-
-                                </div>
 
                             </motion.div>
 
