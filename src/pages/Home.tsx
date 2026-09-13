@@ -9,6 +9,7 @@ import {
   Zap, Wind, Dumbbell, Bone, Droplets, Smile, Scale, Sun,
   CheckCircle2, ArrowRight
 } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 
 export default function Home() {
@@ -291,10 +292,26 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex-1 w-full flex justify-center relative">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/10 rounded-full blur-3xl transform scale-75"></div>
-                <div className="w-64 h-64 md:w-80 md:h-80 bg-background border-8 border-border rounded-full flex items-center justify-center relative z-10 shadow-xl overflow-hidden">
-                  <Leaf className="w-32 h-32 text-primary" />
-                </div>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.96 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className="
+      w-full
+      max-w-[387px]
+      lg:max-w-[430px]
+      overflow-hidden
+      rounded-3xl
+      shadow-2xl
+    "
+                >
+                  <img
+                    src="/kalp-roots-wellness.jpeg"
+                    alt="Kalp Roots"
+                    className="block w-full h-auto"
+                  />
+                </motion.div>
               </div>
             </div>
           </SectionWrapper>

@@ -36,41 +36,58 @@ export default function HealthyLifeSection() {
         <section className="bg-background py-24">
             <div className="container mx-auto px-6">
 
-                <div className="grid lg:grid-cols-2 gap-20">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
 
                     {/* LEFT IMAGE */}
-                    <div className="hidden lg:block">
-                        <div className="sticky top-24">
-
+                    <div className="w-full">
+                        <div className="lg:sticky lg:top-24">
                             <motion.div
-                                initial={{ opacity: 0, scale: 0.92 }}
+                                initial={{ opacity: 0, scale: 0.96 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: .8 }}
-                                className="relative overflow-hidden rounded-3xl shadow-2xl"
+                                viewport={{ once: true, amount: 0.2 }}
+                                transition={{ duration: 0.8, ease: "easeOut" }}
+                                className="
+          relative
+          w-full
+          overflow-hidden
+          rounded-3xl
+          shadow-2xl
+          bg-muted
+        "
                             >
                                 <img
-                                    src="/moringa.jpeg"
+                                    src="/kalp-roots-natural.jpeg"
                                     alt="Healthy Lifestyle"
-                                    className="h-[700px] w-full object-cover"
+                                    className="
+            block
+            w-full
+            h-auto
+            max-h-[700px]
+            object-contain
+            lg:object-cover
+            lg:object-top
+          "
                                 />
-
                             </motion.div>
-
                         </div>
                     </div>
 
                     {/* RIGHT CONTENT */}
-                    <div className="space-y-36">
+                    <div className="space-y-20 lg:space-y-36">
 
                         {sections.map((item, index) => (
                             <motion.div
                                 key={index}
                                 initial={{ opacity: 0, y: 60 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ amount: .4 }}
-                                transition={{ duration: .7 }}
-                                className="min-h-[70vh] flex items-center"
+                                viewport={{ once: false, amount: 0.4 }}
+                                transition={{ duration: 0.7 }}
+                                className="
+          min-h-0
+          lg:min-h-[70vh]
+          flex
+          items-center
+        "
                             >
                                 <div>
 
@@ -89,18 +106,18 @@ export default function HealthyLifeSection() {
                                     <div className="space-y-5 mb-10">
 
                                         <div className="flex items-center gap-4">
-                                            <CheckCircle2 className="text-primary w-6 h-6" />
-                                            Premium Quality Ingredients
+                                            <CheckCircle2 className="text-primary w-6 h-6 shrink-0" />
+                                            <span>Premium Quality Ingredients</span>
                                         </div>
 
                                         <div className="flex items-center gap-4">
-                                            <CheckCircle2 className="text-primary w-6 h-6" />
-                                            Farm Fresh Production
+                                            <CheckCircle2 className="text-primary w-6 h-6 shrink-0" />
+                                            <span>Farm Fresh Production</span>
                                         </div>
 
                                         <div className="flex items-center gap-4">
-                                            <CheckCircle2 className="text-primary w-6 h-6" />
-                                            Rich in Natural Nutrients
+                                            <CheckCircle2 className="text-primary w-6 h-6 shrink-0" />
+                                            <span>Rich in Natural Nutrients</span>
                                         </div>
 
                                     </div>

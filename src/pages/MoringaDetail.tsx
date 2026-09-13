@@ -25,7 +25,7 @@ export default function MoringaDetail() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mb-20">
           {/* Product Visual */}
-          <SectionWrapper>
+          {/* <SectionWrapper>
             <div className="bg-gradient-to-br from-primary/10 to-secondary/40 rounded-3xl p-8 aspect-square flex items-center justify-center relative overflow-hidden border border-border/50 shadow-sm">
               <div className="w-full h-full bg-white/40 blur-3xl absolute rounded-full"></div>
 
@@ -36,6 +36,24 @@ export default function MoringaDetail() {
                   <p className="text-sm font-medium text-primary/80 uppercase tracking-widest">Premium Quality</p>
                 </div>
               </div>
+            </div>
+          </SectionWrapper> */}
+
+          <SectionWrapper>
+            <div className="relative w-full overflow-hidden rounded-3xl shadow-xl">
+              <img
+                src="/moringa-powder.jpg"
+                alt="Kalp Roots"
+                className="
+        w-full
+        h-auto
+        min-h-[320px]
+        md:min-h-[450px]
+        lg:min-h-[550px]
+        object-cover
+        rounded-3xl
+      "
+              />
             </div>
           </SectionWrapper>
 
@@ -75,12 +93,15 @@ export default function MoringaDetail() {
               </div>
 
               <div className="pt-6 border-t border-border">
-                <Button size="lg" className="w-full sm:w-auto rounded-full text-base px-8 h-14 gap-3" onClick={handleBuyWhatsApp}>
-                  <SiWhatsapp className="w-5 h-5" />
-                  Buy via WhatsApp
-                </Button>
+                <a
+                  href={import.meta.env.VITE_PRODUCT_URL}
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-full sm:w-auto rounded-full text-base px-8 h-14 gap-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+                >
+                  Buy Now
+                </a>
                 <p className="text-xs text-muted-foreground mt-3">
-                  Clicking will open WhatsApp to place your order directly with our team.
+                  Clicking will take you to the product page where you can place your order.
                 </p>
               </div>
             </div>

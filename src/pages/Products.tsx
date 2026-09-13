@@ -11,7 +11,7 @@ export default function Products() {
   return (
     <div className="flex flex-col min-h-screen pt-28 pb-20">
       <div className="container mx-auto px-4 md:px-6">
-        
+
         <SectionWrapper className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">{t('products.title')}</h1>
           <div className="w-24 h-1 bg-primary/20 mx-auto rounded-full mb-6"></div>
@@ -36,7 +36,7 @@ export default function Products() {
                   100% natural, premium quality Sahjan leaf powder. Rich in essential vitamins, minerals, and antioxidants to support overall vitality and immunity.
                 </p>
                 <Link href="/products/moringa-powder">
-                  <Button className="w-full rounded-full">{t('products.buy_now')}</Button>
+                  <Button className="w-full rounded-full cursor-pointer">{t('products.buy_now')}</Button>
                 </Link>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function Products() {
                 <p className="text-muted-foreground text-sm mb-6 flex-grow">
                   Traditional natural wellness incense made with pure herbs, resins, and essential oils for a calming atmosphere.
                 </p>
-                <Button disabled variant="outline" className="w-full rounded-full">{t('products.coming_soon')}</Button>
+                <Button disabled variant="outline" className="w-full rounded-full cursor-not-allowed">{t('products.coming_soon')}</Button>
               </div>
             </div>
           </SectionWrapper>
@@ -77,7 +77,7 @@ export default function Products() {
                 <p className="text-muted-foreground text-sm mb-6 flex-grow">
                   Pure Indian gooseberry powder. A powerful source of Vitamin C to boost immunity, skin health, and hair vitality.
                 </p>
-                <Button disabled variant="outline" className="w-full rounded-full">{t('products.coming_soon')}</Button>
+                <Button disabled variant="outline" className="w-full rounded-full ">{t('products.coming_soon')}</Button>
               </div>
             </div>
           </SectionWrapper>
