@@ -12,6 +12,13 @@ import {
   CheckCircle2,
   ArrowRight,
 } from "lucide-react";
+import {
+  Heart,
+  ShieldCheck,
+  Sprout,
+  PackageCheck,
+  Sun,
+} from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -107,21 +114,260 @@ export default function Home() {
                   {t("hero.cta_shop")}
                 </Button>
               </Link>
-              <Link href="/about" className="w-full sm:w-auto">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="w-full  cursor-pointer rounded-full text-base px-8 h-14"
-                >
-                  {t("hero.cta_story")}
-                </Button>
-              </Link>
+
             </div>
           </SectionWrapper>
         </div>
       </section>
 
-      {/* <HealthyLifeSection /> */}
+      {/* THE KALP ROOTS STORY */}
+      <section className="relative overflow-hidden bg-secondary/20 py-20 md:py-28">
+        {/* Decorative background elements */}
+        <div className="absolute -top-20 -left-20 opacity-[0.05] pointer-events-none">
+          <Leaf className="w-80 h-80 text-primary" />
+        </div>
+
+        <div className="absolute -bottom-20 -right-20 opacity-[0.05] pointer-events-none">
+          <Sprout className="w-80 h-80 text-primary" />
+        </div>
+
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          {/* Heading */}
+          <SectionWrapper className="text-center max-w-3xl mx-auto mb-14 md:mb-20">
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-5">
+              <Leaf className="w-4 h-4" />
+              The Kalp Roots Story
+            </div>
+
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6">
+              From Nature to{" "}
+              <span className="text-primary">Wellness</span>
+            </h2>
+
+            <div className="w-24 h-1 bg-primary/20 mx-auto rounded-full mb-7" />
+
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              Kalp Roots is a natural wellness brand built around a simple
+              thought — <span className="font-semibold text-foreground">
+                “From Nature to Wellness.”
+              </span>{" "}
+              Our purpose is to bring thoughtfully selected, quality-focused
+              natural products into everyday life, while keeping purity,
+              authenticity and care at the heart of everything we do.
+            </p>
+          </SectionWrapper>
+
+          {/* Story Content */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+            {/* ROOTED IN NATURE */}
+            <SectionWrapper className="h-full">
+              <div className="group h-full bg-background rounded-3xl border border-border/50 p-7 md:p-9 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-500">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 shrink-0 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
+                    <Leaf className="w-7 h-7 text-primary" />
+                  </div>
+
+                  <h3 className="text-2xl md:text-3xl font-serif font-bold">
+                    Rooted in Nature
+                  </h3>
+                </div>
+
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    Nature has always been a source of nourishment, tradition
+                    and wellbeing. Across generations, people have relied on
+                    naturally sourced ingredients as part of their everyday
+                    lifestyle.
+                  </p>
+
+                  <p>
+                    At Kalp Roots, we take inspiration from this timeless
+                    connection and work towards creating products that fit
+                    naturally into modern living.
+                  </p>
+
+                  <p>
+                    Our journey begins with carefully selected ingredients and
+                    a commitment to maintaining their natural goodness. From
+                    sourcing to packaging, we focus on quality and hygiene so
+                    that what reaches you is handled with the care it deserves.
+                  </p>
+                </div>
+              </div>
+            </SectionWrapper>
+
+            {/* SIMPLE PRODUCTS */}
+            <SectionWrapper className="h-full">
+              <div className="group h-full bg-background rounded-3xl border border-border/50 p-7 md:p-9 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-500">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 shrink-0 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
+                    <Heart className="w-7 h-7 text-primary" />
+                  </div>
+
+                  <h3 className="text-2xl md:text-3xl font-serif font-bold">
+                    Simple Products.
+                    <br className="hidden sm:block" />
+                    Thoughtful Choices.
+                  </h3>
+                </div>
+
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    We believe wellness does not have to be complicated.
+                    Sometimes, the simplest choices can become meaningful
+                    parts of our daily routine.
+                  </p>
+
+                  <p>
+                    Our product range is designed with this philosophy in
+                    mind. We focus on natural and traditional ingredients that
+                    people can easily incorporate into their lifestyle.
+                  </p>
+
+                  <p>
+                    Each product is created with attention to quality,
+                    presentation and everyday usability. We aim to make natural
+                    products accessible while maintaining the standards that
+                    our customers expect from a modern wellness brand.
+                  </p>
+                </div>
+
+                <div className="mt-7 flex items-center gap-3 rounded-2xl bg-primary/5 border border-primary/10 p-4">
+                  <PackageCheck className="w-6 h-6 text-primary shrink-0" />
+
+                  <div>
+                    <p className="font-semibold text-foreground text-sm">
+                      Our Current Offering
+                    </p>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Premium Moringa Powder, with more natural products
+                      thoughtfully planned for the future.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </SectionWrapper>
+
+            {/* QUALITY */}
+            <SectionWrapper className="h-full">
+              <div className="group h-full bg-primary text-primary-foreground rounded-3xl p-7 md:p-9 shadow-lg hover:shadow-2xl transition-all duration-500 relative overflow-hidden">
+                <div className="absolute -right-12 -bottom-16 opacity-10 pointer-events-none">
+                  <ShieldCheck className="w-64 h-64" />
+                </div>
+
+                <div className="relative z-10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-14 h-14 shrink-0 rounded-2xl bg-primary-foreground/10 flex items-center justify-center">
+                      <ShieldCheck className="w-7 h-7" />
+                    </div>
+
+                    <h3 className="text-2xl md:text-3xl font-serif font-bold">
+                      Quality at Every Step
+                    </h3>
+                  </div>
+
+                  <div className="space-y-4 text-primary-foreground/80 leading-relaxed">
+                    <p>
+                      For us, quality is more than a statement on a package.
+                      It is a responsibility.
+                    </p>
+
+                    <p>
+                      We pay attention to the journey of our products — from
+                      selecting suitable raw materials to hygienic processing,
+                      careful packing and responsible presentation.
+                    </p>
+
+                    <p>
+                      We believe that transparency and consistency are
+                      essential to building lasting trust with our customers.
+                    </p>
+                  </div>
+
+                  <div className="mt-7 space-y-3">
+                    {[
+                      "Choose carefully",
+                      "Handle responsibly",
+                      "Deliver with care",
+                    ].map((item) => (
+                      <div
+                        key={item}
+                        className="flex items-center gap-3 text-sm font-medium"
+                      >
+                        <CheckCircle2 className="w-5 h-5 shrink-0" />
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </SectionWrapper>
+
+            {/* TRADITION */}
+            <SectionWrapper className="h-full">
+              <div className="group h-full bg-background rounded-3xl border border-border/50 p-7 md:p-9 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-500">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 shrink-0 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
+                    <Sun className="w-7 h-7 text-primary" />
+                  </div>
+
+                  <h3 className="text-2xl md:text-3xl font-serif font-bold">
+                    Inspired by Tradition,
+                    <br className="hidden sm:block" />
+                    Made for Today
+                  </h3>
+                </div>
+
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    Kalp Roots respects the wisdom of traditional natural
+                    living while embracing the expectations of today’s
+                    consumers.
+                  </p>
+
+                  <p>
+                    We want our products to feel authentic and rooted in
+                    nature, yet convenient and relevant to modern lifestyles.
+                  </p>
+
+                  <p>
+                    Whether it is adding natural ingredients to your daily
+                    routine or choosing products inspired by traditional
+                    practices, our goal is to make the experience simple,
+                    reliable and meaningful.
+                  </p>
+                </div>
+
+                <div className="mt-7 rounded-2xl bg-secondary/50 p-5 flex items-center gap-4">
+                  <div className="w-11 h-11 shrink-0 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Sprout className="w-5 h-5 text-primary" />
+                  </div>
+
+                  <p className="text-sm font-medium text-foreground">
+                    Natural living, thoughtfully brought into everyday life.
+                  </p>
+                </div>
+              </div>
+            </SectionWrapper>
+          </div>
+
+          {/* Closing Message */}
+          <SectionWrapper className="mt-8 md:mt-12">
+            <div className="rounded-3xl bg-background border border-primary/10 p-8 md:p-12 text-center shadow-sm">
+              <Leaf className="w-8 h-8 text-primary mx-auto mb-5" />
+
+              <p className="text-xl md:text-2xl lg:text-3xl font-serif font-semibold leading-relaxed max-w-3xl mx-auto">
+                Thoughtfully rooted in nature.
+                <br />
+                <span className="text-primary">
+                  Made for modern wellness.
+                </span>
+              </p>
+            </div>
+          </SectionWrapper>
+        </div>
+      </section>
+
 
       {/* WHY CHOOSE SECTION */}
       <section className="py-20 bg-background">
@@ -329,7 +575,7 @@ export default function Home() {
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   {t("about.story_text")}
                 </p>
-                <ul className="space-y-3 pt-4">
+                {/* <ul className="space-y-3 pt-4">
                   {[
                     "Sourced from the finest farms",
                     "No artificial colors or preservatives",
@@ -343,7 +589,7 @@ export default function Home() {
                       {item}
                     </li>
                   ))}
-                </ul>
+                </ul> */}
                 <div className="pt-6">
                   <Link href="/about">
                     <Button

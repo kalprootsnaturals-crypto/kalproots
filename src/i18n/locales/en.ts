@@ -63,8 +63,14 @@ export const en = {
   about: {
     title: "Our Story",
     story_text: "Kalp Roots was founded with a simple vision — to make natural wellness products easily accessible without compromising on quality or purity. In a world full of artificial supplements, we wanted to return to the roots. Our journey started by seeking out the finest natural ingredients, meticulously ensuring they remain in their most potent, unadulterated form.",
+    story_text2:`At Kalp Roots, we believe that wellness begins with quality, authenticity, and trust. Our flagship product, Premium Moringa Powder, represents our commitment to these values. Often referred to as the "Miracle Tree", Moringa has been a staple in traditional Indian wellness for centuries.`,
+    story_text3:`We partner with dedicated farmers who understand the soil and respect the environment. Every batch of our product is carefully processed—shade-dried and hygienically ground—to ensure that the vibrant green color, potent nutrients, and natural aroma are preserved just as nature intended.`,
     vision_title: "Our Vision",
-    mission_title: "Our Mission"
+    vision_desc:`Our vision is to grow Kalp Roots into a trusted natural wellness brand that people can associate with purity, quality and thoughtful products.
+   As we grow, we intend to explore a wider range of natural and traditional products while staying true to the principles with which Kalp Roots began. Every new product will be an opportunity to learn, improve and serve our customers better.`,
+    mission_title: "Our Mission",
+    mission_desc:`At Kalp Roots, we don’t want to simply sell products. We want to build a relationship based on trust.
+   We are committed to continuously improving our products, packaging and customer experience. We believe that when nature, quality and thoughtful choices come together, they can become a meaningful part of everyday wellness.`
   },
   contact: {
     title: "Contact Us",

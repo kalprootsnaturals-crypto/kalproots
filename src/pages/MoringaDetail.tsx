@@ -56,7 +56,7 @@ export default function MoringaDetail() {
                 </p>
               </div>
 
-              <div className="space-y-6 mb-8">
+              {/* <div className="space-y-6 mb-8">
                 <h3 className="font-bold text-xl">Key Features</h3>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
@@ -75,7 +75,7 @@ export default function MoringaDetail() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
 
               <div className="pt-6 border-t border-border">
                 <a
