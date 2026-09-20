@@ -54,8 +54,11 @@ export const en = {
   products: {
     title: "Our Products",
     moringa_name: "Premium Moringa Powder",
+    moringa_desc: "100% natural, premium quality Sahjan leaf powder.",
     dhoop_name: "Natural Vedic Dhoop",
+    dhoop_desc: "Traditional natural wellness incense.",
     amla_name: "Amla Powder",
+    amla_desc: "Pure Indian gooseberry powder.",
     coming_soon: "Coming Soon",
     buy_now: "Buy Now"
   },

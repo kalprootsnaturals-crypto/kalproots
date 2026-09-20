@@ -43,8 +43,9 @@ export function Header() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-primary hover:opacity-90 transition-opacity">
-          <Leaf className="h-6 w-6 md:h-8 md:w-8" />
-          <span className="font-serif font-bold text-xl md:text-2xl tracking-tight">Kalp Roots</span>
+          {/* <Leaf className="h-6 w-6 md:h-8 md:w-8" /> */}
+          <img src="/logo_bg_remove.png" alt="Kalp Roots Logo" className="h-6 md:h-8" />
+          <span className="font-serif font-bold text-xl md:text-2xl tracking-tight"></span>
         </Link>
 
         {/* Desktop Nav */}
@@ -74,9 +75,9 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-background border-b border-border/50 shadow-lg py-4 px-6 flex flex-col gap-4 animate-in slide-in-from-top-2">
           {navLinks.map((link) => (
-            <Link 
-              key={link.href} 
-              href={link.href} 
+            <Link
+              key={link.href}
+              href={link.href}
               className="text-base font-medium py-2 border-b border-border/30 last:border-0 text-foreground/90 hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >

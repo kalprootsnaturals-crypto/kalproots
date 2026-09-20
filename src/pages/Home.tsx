@@ -92,7 +92,7 @@ export default function Home() {
         </div>
       </section>
 
-      <HealthyLifeSection />
+      {/* <HealthyLifeSection /> */}
 
       {/* WHY CHOOSE SECTION */}
       <section className="py-20 bg-background">
@@ -176,15 +176,14 @@ export default function Home() {
             {/* Product 1 - Moringa */}
             <SectionWrapper>
               <div className="group bg-card rounded-2xl border border-border/50 overflow-hidden hover-elevate transition-all duration-300 h-full flex flex-col">
-                <div className="h-64 bg-gradient-to-br from-primary/20 to-secondary/30 relative flex items-center justify-center p-6 overflow-hidden">
-                  <div className="w-40 h-40 bg-white/50 rounded-full blur-2xl absolute"></div>
-                  <Leaf className="w-24 h-24 text-primary relative z-10 drop-shadow-md group-hover:scale-110 transition-transform duration-500" />
+                <div className="h-64 bg-linear-to-br from-primary/20 to-secondary/30 relative flex items-center justify-center p-6 overflow-hidden">
+                  <img src="/moringa_pro.jpeg" alt="Moringa Powder" className="w-full h-auto object-contain max-h-40 group-hover:scale-105 transition-transform duration-500" />
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-6 flex flex-col grow">
                   <h3 className="text-xl font-bold mb-2">{t('products.moringa_name')}</h3>
-                  <p className="text-muted-foreground text-sm mb-6 flex-grow">100% natural, premium quality Sahjan leaf powder.</p>
+                  <p className="text-muted-foreground text-sm mb-6 grow">{t('products.moringa_desc')}</p>
                   <Link href="/products/moringa-powder">
-                    <Button className="w-full rounded-full">{t('products.buy_now')}</Button>
+                    <Button className="w-full rounded-full cursor-pointer">{t('products.buy_now')}</Button>
                   </Link>
                 </div>
               </div>
@@ -201,8 +200,8 @@ export default function Home() {
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold mb-2 text-foreground/80">{t('products.dhoop_name')}</h3>
-                  <p className="text-muted-foreground text-sm mb-6 flex-grow">Traditional natural wellness incense.</p>
-                  <Button disabled variant="outline" className="w-full rounded-full">{t('products.coming_soon')}</Button>
+                  <p className="text-muted-foreground text-sm mb-6 flex-grow">{t('products.dhoop_desc')}</p>
+                  <Button disabled variant="outline" className="w-full rounded-full ">{t('products.coming_soon')}</Button>
                 </div>
               </div>
             </SectionWrapper>
@@ -220,7 +219,7 @@ export default function Home() {
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold mb-2 text-foreground/80">{t('products.amla_name')}</h3>
-                  <p className="text-muted-foreground text-sm mb-6 flex-grow">Pure Indian gooseberry powder.</p>
+                  <p className="text-muted-foreground text-sm mb-6 flex-grow">{t('products.amla_desc')}</p>
                   <Button disabled variant="outline" className="w-full rounded-full">{t('products.coming_soon')}</Button>
                 </div>
               </div>

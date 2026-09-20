@@ -9,15 +9,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Leaf, CheckCircle2, ShieldCheck, Sun, Star } from 'lucide-react';
-import { SiWhatsapp } from 'react-icons/si';
+
 
 export default function MoringaDetail() {
   const { t } = useTranslation();
 
-  const handleBuyWhatsApp = () => {
-    const message = "Hi Kalp Roots! I want to order Premium Moringa Powder.";
-    window.open(`https://wa.me/918826671629?text=${encodeURIComponent(message)}`, '_blank');
-  };
+
 
   return (
     <div className="flex flex-col min-h-screen pt-28 pb-20">
@@ -42,7 +39,7 @@ export default function MoringaDetail() {
           <SectionWrapper>
             <div className="relative w-full overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/moringa-powder.jpg"
+                src="/moringa_powder_details.jpeg"
                 alt="Kalp Roots"
                 className="
         w-full

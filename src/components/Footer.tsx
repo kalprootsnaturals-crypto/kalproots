@@ -12,15 +12,18 @@ export function Footer() {
       {/* Subtle decorative elements */}
       <div className="absolute top-0 right-0 opacity-5 pointer-events-none transform translate-x-1/3 -translate-y-1/3">
         <Leaf className="w-96 h-96 text-primary" />
+
       </div>
+
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand Info */}
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 text-primary mb-4">
-              <Leaf className="h-8 w-8" />
-              <span className="font-serif font-bold text-2xl">Kalp Roots</span>
+              {/* <Leaf className="h-8 w-8" /> */}
+              <img src="/logo_bg_remove.png" alt="Kalp Roots Logo" className="h-6 md:h-8" />
+              <span className="font-serif font-bold text-2xl"></span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               {t('footer.tagline')}
