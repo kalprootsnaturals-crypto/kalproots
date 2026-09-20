@@ -9,7 +9,7 @@ export const en = {
   hero: {
     greeting_default: "Welcome",
     tagline: "Where Nature Meets Purity",
-    subtitle: "Premium natural wellness products crafted for your everyday health journey",
+    subtitle: "At Kalp Roots, we believe that wellness begins with a closer connection to nature. In a world where everyday life is becoming increasingly fast-paced, we aim to bring back the simplicity, purity and goodness that nature has always offered.",
     cta_shop: "Shop Now",
     cta_story: "Our Story"
   },
@@ -33,11 +33,7 @@ export const en = {
     b1_title: "Boosts Energy",
     b1_desc: "Natural energy without caffeine crashes",
     b2_title: "Supports Digestion",
-    b2_desc: "Promotes healthy gut function",
-    b3_title: "Improves Immunity",
-    b3_desc: "Rich in immune-boosting nutrients",
-    b4_title: "Rich in Protein",
-    b4_desc: "Plant-based protein for strength",
+    b2_desc: "Promotes healthy gut function", 
     b5_title: "High in Calcium",
     b5_desc: "Supports strong bones and teeth",
     b6_title: "Rich in Iron",
@@ -53,7 +49,9 @@ export const en = {
   },
   products: {
     title: "Our Products",
+    desc:"Discover our range of premium natural wellness products, crafted with care to support your everyday health journey.",
     moringa_name: "Premium Moringa Powder",
+    product_moringa_desc:"Experience the power of the 'Miracle Tree'. Our Premium Moringa Powder is made from carefully selected, shade-dried Sahjan leaves to preserve maximum nutritional value. A natural, plant-based superfood to support your daily wellness journey.",
     moringa_desc: "100% natural, premium quality Sahjan leaf powder.",
     dhoop_name: "Natural Vedic Dhoop",
     dhoop_desc: "Traditional natural wellness incense.",
@@ -81,6 +79,7 @@ export const en = {
   },
   faq: {
     title: "Frequently Asked Questions",
+    subtitle: "Find answers to common questions about Kalp Roots and our natural wellness products.",
     q1: "What is Kalp Roots?",
     a1: "Kalp Roots is a natural wellness brand dedicated to providing high-quality, sustainably sourced products that support your health and well-being.",
     q2: "Are your products 100% natural?",

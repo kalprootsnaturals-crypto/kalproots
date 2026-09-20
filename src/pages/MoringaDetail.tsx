@@ -9,32 +9,20 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Leaf, CheckCircle2, ShieldCheck, Sun, Star } from 'lucide-react';
-
+import {
+  FlaskConical, Sparkles, Microscope,
+  Zap, Wind, Dumbbell, Bone, Droplets, Smile, Scale,
+  ArrowRight
+} from 'lucide-react';
 
 export default function MoringaDetail() {
   const { t } = useTranslation();
-
-
 
   return (
     <div className="flex flex-col min-h-screen pt-28 pb-20">
       <div className="container mx-auto px-4 md:px-6">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mb-20">
-          {/* Product Visual */}
-          {/* <SectionWrapper>
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/40 rounded-3xl p-8 aspect-square flex items-center justify-center relative overflow-hidden border border-border/50 shadow-sm">
-              <div className="w-full h-full bg-white/40 blur-3xl absolute rounded-full"></div>
-
-              <div className="relative z-10 flex flex-col items-center justify-center text-center space-y-6 p-8 bg-background/40 backdrop-blur-sm rounded-full border border-white/20 aspect-square w-3/4 max-w-sm shadow-xl">
-                <Leaf className="w-24 h-24 text-primary drop-shadow-md" />
-                <div>
-                  <h3 className="font-serif font-bold text-2xl text-primary mb-1">Kalp Roots</h3>
-                  <p className="text-sm font-medium text-primary/80 uppercase tracking-widest">Premium Quality</p>
-                </div>
-              </div>
-            </div>
-          </SectionWrapper> */}
 
           <SectionWrapper>
             <div className="relative w-full overflow-hidden rounded-3xl shadow-xl">
@@ -64,7 +52,7 @@ export default function MoringaDetail() {
                 </div>
                 <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">{t('products.moringa_name')}</h1>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Experience the power of the "Miracle Tree". Our Premium Moringa Powder is made from carefully selected, shade-dried Sahjan leaves to preserve maximum nutritional value. A natural, plant-based superfood to support your daily wellness journey.
+                  {t('products.product_moringa_desc')}
                 </p>
               </div>
 
@@ -184,6 +172,40 @@ export default function MoringaDetail() {
             </div>
           </SectionWrapper>
         </div>
+
+
+        {/* HEALTH BENEFITS SECTION */}
+        <section className="py-20 bg-secondary/30 relative">
+          <div className="container mx-auto px-4 md:px-6">
+            <SectionWrapper className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">{t('benefits.title')}</h2>
+              <div className="w-24 h-1 bg-primary/20 mx-auto rounded-full"></div>
+            </SectionWrapper>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+              {[
+                { icon: Zap, title: 'benefits.b1_title', desc: 'benefits.b1_desc' },
+                { icon: Wind, title: 'benefits.b2_title', desc: 'benefits.b2_desc' },
+                { icon: ShieldCheck, title: 'benefits.b3_title', desc: 'benefits.b3_desc' },
+                { icon: Dumbbell, title: 'benefits.b4_title', desc: 'benefits.b4_desc' },
+                { icon: Bone, title: 'benefits.b5_title', desc: 'benefits.b5_desc' },
+                { icon: Droplets, title: 'benefits.b6_title', desc: 'benefits.b6_desc' },
+                { icon: Sparkles, title: 'benefits.b7_title', desc: 'benefits.b7_desc' },
+                { icon: Smile, title: 'benefits.b8_title', desc: 'benefits.b8_desc' },
+                { icon: Scale, title: 'benefits.b9_title', desc: 'benefits.b9_desc' },
+                { icon: Sun, title: 'benefits.b10_title', desc: 'benefits.b10_desc' }
+              ].map((benefit, i) => (
+                <SectionWrapper key={i} className="h-full">
+                  <div className="bg-background rounded-xl p-5 h-full border border-transparent hover:border-primary/30 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+                    <benefit.icon className="w-6 h-6 text-primary mb-4" />
+                    <h4 className="font-bold mb-2 text-foreground">{t(benefit.title)}</h4>
+                    <p className="text-sm text-muted-foreground">{t(benefit.desc)}</p>
+                  </div>
+                </SectionWrapper>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* FAQs */}
         <SectionWrapper>

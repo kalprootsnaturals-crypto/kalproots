@@ -23,7 +23,7 @@ export default function Faq() {
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">{t('faq.title')}</h1>
           <div className="w-24 h-1 bg-primary/20 mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Find answers to common questions about Kalp Roots and our natural wellness products.
+            {t('faq.subtitle')}
           </p>
         </SectionWrapper>
 

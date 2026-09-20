@@ -16,7 +16,7 @@ export default function Products() {
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">{t('products.title')}</h1>
           <div className="w-24 h-1 bg-primary/20 mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our range of premium natural wellness products, crafted with care to support your everyday health journey.
+            {t('products.desc')}
           </p>
         </SectionWrapper>
 
@@ -25,15 +25,14 @@ export default function Products() {
           <SectionWrapper>
             <div className="group bg-card rounded-2xl border border-border/50 overflow-hidden hover-elevate transition-all duration-300 h-full flex flex-col">
               <div className="h-64 bg-gradient-to-br from-primary/20 to-secondary/30 relative flex items-center justify-center p-6 overflow-hidden">
-                <div className="w-40 h-40 bg-white/50 rounded-full blur-2xl absolute"></div>
-                <Leaf className="w-24 h-24 text-primary relative z-10 drop-shadow-md group-hover:scale-110 transition-transform duration-500" />
+                <img src="/moringa_pro.jpeg" alt="Moringa Powder" className="w-full h-auto object-contain max-h-40 group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl font-bold">{t('products.moringa_name')}</h3>
                 </div>
                 <p className="text-muted-foreground text-sm mb-6 flex-grow">
-                  100% natural, premium quality Sahjan leaf powder. Rich in essential vitamins, minerals, and antioxidants to support overall vitality and immunity.
+                  {t('products.moringa_desc')}
                 </p>
                 <Link href="/products/moringa-powder">
                   <Button className="w-full rounded-full cursor-pointer">{t('products.buy_now')}</Button>
@@ -54,7 +53,7 @@ export default function Products() {
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold mb-2 text-foreground/80">{t('products.dhoop_name')}</h3>
                 <p className="text-muted-foreground text-sm mb-6 flex-grow">
-                  Traditional natural wellness incense made with pure herbs, resins, and essential oils for a calming atmosphere.
+                  {t('products.product_dhoop_desc')}
                 </p>
                 <Button disabled variant="outline" className="w-full rounded-full cursor-not-allowed">{t('products.coming_soon')}</Button>
               </div>
@@ -75,7 +74,7 @@ export default function Products() {
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold mb-2 text-foreground/80">{t('products.amla_name')}</h3>
                 <p className="text-muted-foreground text-sm mb-6 flex-grow">
-                  Pure Indian gooseberry powder. A powerful source of Vitamin C to boost immunity, skin health, and hair vitality.
+                  {t('products.product_amla_desc')}
                 </p>
                 <Button disabled variant="outline" className="w-full rounded-full ">{t('products.coming_soon')}</Button>
               </div>
