@@ -33,7 +33,7 @@ export default function Contact() {
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">{t('contact.title')}</h1>
           <div className="w-24 h-1 bg-primary/20 mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions or want to place an order? We'd love to hear from you.
+            {t('contact.subtitle')}
           </p>
         </SectionWrapper>
 
@@ -41,7 +41,7 @@ export default function Contact() {
           {/* Contact Info */}
           <SectionWrapper>
             <div className="bg-primary/5 rounded-3xl p-8 md:p-12 h-full flex flex-col justify-center">
-              <h2 className="text-2xl font-serif font-bold mb-8">Get in Touch</h2>
+              <h2 className="text-2xl font-serif font-bold mb-8">{t('contact.get_in_touch')}</h2>
 
               <div className="space-y-8 mb-10">
                 <div className="flex items-start gap-4">
@@ -49,7 +49,7 @@ export default function Contact() {
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Phone</h3>
+                    <h3 className="font-bold text-lg mb-1">{t('common.phone')}</h3>
                     <p className="text-muted-foreground">{t('contact.phone')}</p>
                   </div>
                 </div>
@@ -59,7 +59,7 @@ export default function Contact() {
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Email</h3>
+                    <h3 className="font-bold text-lg mb-1">{t('common.email')}</h3>
                     <p className="text-muted-foreground">{t('contact.email')}</p>
                   </div>
                 </div>
@@ -69,8 +69,9 @@ export default function Contact() {
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Location</h3>
-                    <p className="text-muted-foreground">Village and Post Kharusa, Orai, Jalaun, 285001</p>
+                    <h3 className="font-bold text-lg mb-1">{t('common.location')}</h3>
+                    <p className="text-muted-foreground">Village and Post Kharusa, Orai , District Jalaun, Uttar Pradesh (India)
+                      285001</p>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,10 @@
 export const en = {
+  common:{
+    phone:"Phone",
+    email:"Email",
+    location:"Location",
+  },
+
   nav: {
     home: "Home",
     products: "Products",
@@ -13,6 +19,22 @@ export const en = {
     cta_shop: "Shop Now",
     cta_story: "Our Story"
   },
+    nature:{
+      slogan1:"Thoughtfully rooted in nature.",
+      slogan2:"Made for modern wellness.",
+      tagline: "The Kalp Roots Story",
+      title: "From Nature to",
+      subtitle:"wellness",
+      desc:"Kalp Roots is a natural wellness brand built around a simple thought — “From Nature to Wellness.” Our purpose is to bring thoughtfully selected, quality-focused natural products into everyday life, while keeping purity, authenticity and care at the heart of everything we do.",
+      heading1:"Rooted in Nature",
+      desc1: { p1: "Nature has always been a source of nourishment, tradition and wellbeing. Across generations, people have relied on naturally sourced ingredients as part of their everyday lifestyle.", p2:"At Kalp Roots, we take inspiration from this timeless connection and work towards creating products that fit naturally into modern living.",p3:" Our journey begins with carefully selected ingredients and a commitment to maintaining their natural goodness. From sourcing to packaging, we focus on quality and hygiene so that what reaches you is handled with the care it deserves."},
+      heading2:"Simple Products Choices",
+      desc2: { p1:"We believe wellness does not have to be complicated. Sometimes, the simplest choices can become meaningful parts of our daily routine.", p2:"Our product range is designed with this philosophy in mind. We focus on natural and traditional ingredients that people can easily incorporate into their lifestyle.", p3:"Each product is created with attention to quality, presentation and everyday usability. We aim to make natural products accessible while maintaining the standards that our customers expect from a modern wellness brand."},
+      heading3:"Quality at Every Step",
+      desc3: { p1:"For us, quality is more than a statement on a package. It is a responsibility.", p2:"We pay attention to the journey of our products — from selecting suitable raw materials to hygienic processing, careful packing and responsible presentation.", p3:"We believe that transparency and consistency are essential to building lasting trust with our customers."},
+      heading4:"Inspired by Tradition, Made for Today",
+      desc4: { p1:"Kalp Roots respects the wisdom of traditional natural living while embracing the expectations of today’s consumers.", p2:"We want our products to feel authentic and rooted in nature, yet convenient and relevant to modern lifestyles.", p3:"Whether it is adding natural ingredients to your daily routine or choosing products inspired by traditional practices, our goal is to make the experience simple, reliable and meaningful."}
+    },
   why: {
     title: "Why Choose Kalp Roots?",
     c1_title: "100% Natural",
@@ -74,6 +96,8 @@ export const en = {
   },
   contact: {
     title: "Contact Us",
+    subtitle:"Have questions or want to place an order? We'd love to hear from you.",
+    get_in_touch: "Get in Touch",
     email: "kalprootsnaturals@gmail.com",
     phone: "+91 88266 71629",
     whatsapp: "Chat on WhatsApp",

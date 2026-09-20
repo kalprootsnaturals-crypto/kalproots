@@ -12,13 +12,7 @@ import {
   CheckCircle2,
   ArrowRight,
 } from "lucide-react";
-import {
-  Heart,
-  ShieldCheck,
-  Sprout,
-  PackageCheck,
-  Sun,
-} from "lucide-react";
+import { Heart, ShieldCheck, Sprout, PackageCheck, Sun } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -86,9 +80,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-gradient-to-b from-primary/10 to-background pt-8 pb-20 md:pt-12 md:pb-32">
-        {/* <GreetingBanner /> */}
-
+      <section className="relative overflow-hidden bg-linear-to-b from-primary/10 to-background pt-8 pb-20 md:pt-12 md:pb-32">
         {/* Floating leaf background shapes */}
         <div className="absolute top-20 left-10 opacity-20 transform -rotate-45">
           <Leaf className="w-24 h-24 text-primary" />
@@ -114,7 +106,6 @@ export default function Home() {
                   {t("hero.cta_shop")}
                 </Button>
               </Link>
-
             </div>
           </SectionWrapper>
         </div>
@@ -136,24 +127,18 @@ export default function Home() {
           <SectionWrapper className="text-center max-w-3xl mx-auto mb-14 md:mb-20">
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-5">
               <Leaf className="w-4 h-4" />
-              The Kalp Roots Story
+              {t("nature.tagline")}
             </div>
 
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6">
-              From Nature to{" "}
-              <span className="text-primary">Wellness</span>
+              {t("nature.title")}{" "}
+              <span className="text-primary">{t("nature.subtitle")}</span>
             </h2>
 
             <div className="w-24 h-1 bg-primary/20 mx-auto rounded-full mb-7" />
 
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              Kalp Roots is a natural wellness brand built around a simple
-              thought — <span className="font-semibold text-foreground">
-                “From Nature to Wellness.”
-              </span>{" "}
-              Our purpose is to bring thoughtfully selected, quality-focused
-              natural products into everyday life, while keeping purity,
-              authenticity and care at the heart of everything we do.
+              {t("nature.desc")}
             </p>
           </SectionWrapper>
 
@@ -168,30 +153,16 @@ export default function Home() {
                   </div>
 
                   <h3 className="text-2xl md:text-3xl font-serif font-bold">
-                    Rooted in Nature
+                    {t("nature.heading1")}
                   </h3>
                 </div>
 
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>
-                    Nature has always been a source of nourishment, tradition
-                    and wellbeing. Across generations, people have relied on
-                    naturally sourced ingredients as part of their everyday
-                    lifestyle.
-                  </p>
+                  <p>{t("nature.desc1.p1")}</p>
 
-                  <p>
-                    At Kalp Roots, we take inspiration from this timeless
-                    connection and work towards creating products that fit
-                    naturally into modern living.
-                  </p>
+                  <p>{t("nature.desc1.p2")}</p>
 
-                  <p>
-                    Our journey begins with carefully selected ingredients and
-                    a commitment to maintaining their natural goodness. From
-                    sourcing to packaging, we focus on quality and hygiene so
-                    that what reaches you is handled with the care it deserves.
-                  </p>
+                  <p>{t("nature.desc1.p3")}</p>
                 </div>
               </div>
             </SectionWrapper>
@@ -205,45 +176,16 @@ export default function Home() {
                   </div>
 
                   <h3 className="text-2xl md:text-3xl font-serif font-bold">
-                    Simple Products.
-                    <br className="hidden sm:block" />
-                    Thoughtful Choices.
+                    {t("nature.heading2")}
                   </h3>
                 </div>
 
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>
-                    We believe wellness does not have to be complicated.
-                    Sometimes, the simplest choices can become meaningful
-                    parts of our daily routine.
-                  </p>
+                  <p>{t("nature.desc2.p1")}</p>
 
-                  <p>
-                    Our product range is designed with this philosophy in
-                    mind. We focus on natural and traditional ingredients that
-                    people can easily incorporate into their lifestyle.
-                  </p>
+                  <p>{t("nature.desc2.p2")}</p>
 
-                  <p>
-                    Each product is created with attention to quality,
-                    presentation and everyday usability. We aim to make natural
-                    products accessible while maintaining the standards that
-                    our customers expect from a modern wellness brand.
-                  </p>
-                </div>
-
-                <div className="mt-7 flex items-center gap-3 rounded-2xl bg-primary/5 border border-primary/10 p-4">
-                  <PackageCheck className="w-6 h-6 text-primary shrink-0" />
-
-                  <div>
-                    <p className="font-semibold text-foreground text-sm">
-                      Our Current Offering
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      Premium Moringa Powder, with more natural products
-                      thoughtfully planned for the future.
-                    </p>
-                  </div>
+                  <p>{t("nature.desc2.p3")}</p>
                 </div>
               </div>
             </SectionWrapper>
@@ -262,42 +204,16 @@ export default function Home() {
                     </div>
 
                     <h3 className="text-2xl md:text-3xl font-serif font-bold">
-                      Quality at Every Step
+                      {t("nature.heading3")}
                     </h3>
                   </div>
 
                   <div className="space-y-4 text-primary-foreground/80 leading-relaxed">
-                    <p>
-                      For us, quality is more than a statement on a package.
-                      It is a responsibility.
-                    </p>
+                    <p>{t("nature.desc3.p1")}</p>
 
-                    <p>
-                      We pay attention to the journey of our products — from
-                      selecting suitable raw materials to hygienic processing,
-                      careful packing and responsible presentation.
-                    </p>
+                    <p>{t("nature.desc3.p2")}</p>
 
-                    <p>
-                      We believe that transparency and consistency are
-                      essential to building lasting trust with our customers.
-                    </p>
-                  </div>
-
-                  <div className="mt-7 space-y-3">
-                    {[
-                      "Choose carefully",
-                      "Handle responsibly",
-                      "Deliver with care",
-                    ].map((item) => (
-                      <div
-                        key={item}
-                        className="flex items-center gap-3 text-sm font-medium"
-                      >
-                        <CheckCircle2 className="w-5 h-5 shrink-0" />
-                        {item}
-                      </div>
-                    ))}
+                    <p>{t("nature.desc3.p3")}</p>
                   </div>
                 </div>
               </div>
@@ -312,40 +228,16 @@ export default function Home() {
                   </div>
 
                   <h3 className="text-2xl md:text-3xl font-serif font-bold">
-                    Inspired by Tradition,
-                    <br className="hidden sm:block" />
-                    Made for Today
+                    {t("nature.heading4")}
                   </h3>
                 </div>
 
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>
-                    Kalp Roots respects the wisdom of traditional natural
-                    living while embracing the expectations of today’s
-                    consumers.
-                  </p>
+                  <p>{t("nature.desc4.p1")}</p>
 
-                  <p>
-                    We want our products to feel authentic and rooted in
-                    nature, yet convenient and relevant to modern lifestyles.
-                  </p>
+                  <p>{t("nature.desc4.p2")}</p>
 
-                  <p>
-                    Whether it is adding natural ingredients to your daily
-                    routine or choosing products inspired by traditional
-                    practices, our goal is to make the experience simple,
-                    reliable and meaningful.
-                  </p>
-                </div>
-
-                <div className="mt-7 rounded-2xl bg-secondary/50 p-5 flex items-center gap-4">
-                  <div className="w-11 h-11 shrink-0 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Sprout className="w-5 h-5 text-primary" />
-                  </div>
-
-                  <p className="text-sm font-medium text-foreground">
-                    Natural living, thoughtfully brought into everyday life.
-                  </p>
+                  <p>{t("nature.desc4.p3")}</p>
                 </div>
               </div>
             </SectionWrapper>
@@ -357,17 +249,14 @@ export default function Home() {
               <Leaf className="w-8 h-8 text-primary mx-auto mb-5" />
 
               <p className="text-xl md:text-2xl lg:text-3xl font-serif font-semibold leading-relaxed max-w-3xl mx-auto">
-                Thoughtfully rooted in nature.
+                {t("nature.slogan1")}
                 <br />
-                <span className="text-primary">
-                  Made for modern wellness.
-                </span>
+                <span className="text-primary">{t("nature.slogan2")}</span>
               </p>
             </div>
           </SectionWrapper>
         </div>
       </section>
-
 
       {/* WHY CHOOSE SECTION */}
       <section className="py-20 bg-background">

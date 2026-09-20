@@ -55,7 +55,7 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <Button variant="outline" size="sm" onClick={toggleLanguage} className="rounded-full px-4 ml-2 border-primary/20 text-primary hover:bg-primary/5">
+          <Button variant="outline" size="sm" onClick={toggleLanguage} className="rounded-full px-4 ml-2 border-primary/20 text-primary hover:bg-primary/5 cursor-pointer">
             EN | हिं
           </Button>
         </nav>
