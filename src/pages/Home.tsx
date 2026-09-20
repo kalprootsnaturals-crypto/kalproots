@@ -258,6 +258,8 @@ export default function Home() {
         </div>
       </section>
 
+
+
       {/* WHY CHOOSE SECTION */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 md:px-6">
@@ -290,6 +292,56 @@ export default function Home() {
               </SectionWrapper>
             ))}
           </div>
+        </div>
+      </section>
+
+
+      {/* FSSAI LICENSE SECTION */}
+      <section className="py-12 md:py-16 bg-secondary/20">
+        <div className="container mx-auto px-4 md:px-6">
+          <SectionWrapper>
+            <div className="relative overflow-hidden rounded-3xl border border-primary/15 bg-background shadow-sm">
+              {/* Decorative background */}
+              <div className="absolute -right-16 -top-16 opacity-[0.05] pointer-events-none">
+                <ShieldCheck className="w-64 h-64 text-primary" />
+              </div>
+
+              <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 md:gap-10 p-7 md:p-10">
+                {/* Icon */}
+                <div className="shrink-0">
+                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-primary/10 flex items-center justify-center">
+                    <ShieldCheck className="w-10 h-10 md:w-12 md:h-12 text-primary" />
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="text-center md:text-left flex-1">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-3">
+                    <CheckCircle2 className="w-4 h-4" />
+                    {t("fssai.badge")}
+                  </div>
+
+                  <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3">
+                    {t("fssai.title")}
+                  </h2>
+
+                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
+                    {t("fssai.description")}
+                  </p>
+                </div>
+
+                {/* Badge */}
+                <div className="shrink-0">
+                  <div className="rounded-2xl border border-primary/20 bg-primary/5 px-6 py-4 text-center">
+                    <ShieldCheck className="w-7 h-7 text-primary mx-auto mb-2" />
+                    <p className="text-sm font-semibold text-primary">
+                      {t("fssai.licensed")}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SectionWrapper>
         </div>
       </section>
 

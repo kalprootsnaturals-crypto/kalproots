@@ -4,6 +4,7 @@ import { useTranslation } from '@/i18n';
 import { Leaf, Instagram, Facebook, Phone } from 'lucide-react';
 import { SiWhatsapp } from 'react-icons/si';
 
+
 export function Footer() {
   const { t } = useTranslation();
 
@@ -72,8 +73,8 @@ export function Footer() {
             {t('footer.copyright')}
           </p>
           <div className="flex gap-4 text-sm text-muted-foreground">
-            <Link href="/faq" className="hover:text-primary transition-colors">{t('footer.privacy')}</Link>
-            <Link href="/faq" className="hover:text-primary transition-colors">{t('footer.terms')}</Link>
+            <Link href="/privacy" className="hover:text-primary transition-colors">{t('footer.privacy')}</Link>
+            <Link href="/terms" className="hover:text-primary transition-colors">{t('footer.terms')}</Link>
           </div>
         </div>
       </div>

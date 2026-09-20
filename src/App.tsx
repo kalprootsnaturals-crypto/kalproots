@@ -15,6 +15,8 @@ import MoringaDetail from '@/pages/MoringaDetail';
 import About from '@/pages/About';
 import Faq from '@/pages/Faq';
 import Contact from '@/pages/Contact';
+import Terms from '@/pages/Terms';
+import Privacy from '@/pages/Privacy';
 
 const queryClient = new QueryClient();
 
@@ -30,6 +32,8 @@ function Router() {
           <Route path="/about" component={About} />
           <Route path="/faq" component={Faq} />
           <Route path="/contact" component={Contact} />
+          <Route path="/terms" component={Terms} />
+          <Route path="/privacy" component={Privacy} />
           <Route component={NotFound} />
         </Switch>
       </main>
